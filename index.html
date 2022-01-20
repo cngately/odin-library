@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Library</title>
+
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="flex background-main" onload="loadLibrary()">
+    <button id="add-book" class="flex center background-secondary color-secondary">+</button>
+
+    <form id="book-form" class="flex column background-secondary color-secondary" onsubmit="submitBook(); return false;">
+        <input id="title" type="text" placeholder="Title" autocomplete="off">
+        <input id="author" type="text" placeholder="Author" autocomplete="off">
+        <input id="pages" type="number" placeholder="Number of pages" autocomplete="off">
+        <div>
+            <input type="checkbox" name="read" id="read">
+            <label for="read"> Read</label>
+        </div>
+        <input type="submit">
+    </form>
+</body>
+</html>
